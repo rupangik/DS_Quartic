@@ -23,6 +23,7 @@ CONCEPTUAL APPROACH
 7)Applied Logistic Regression (ran a few iterations wherein variables with p-value > 0.05 were removed) to get the predictions. Used Cross validation technique as well.
 
 MODEL PERFORMANCE
+
 1)ROC curve and AUC: Plotted the ROC curve to evaluate the performance of logit model compared to a random model.
 
 2)Decile coverage for target =1: Arranged the predicted probabilities in descending order and then made decile group. Ideally, the # of cases where target =1 should be maximum in top (first) decile and should decrease continuously, leading to minimum number of such cases in last decile (where probabilities are small)
@@ -30,6 +31,7 @@ MODEL PERFORMANCE
 3)RESULTS – The AUC was 60% on both the training and validation set.
 
 IMPROVEMENTS
+
 1)Considering there was some memory issue, to evaluate the model performance – 
   1.1)I would have calculated concordance and discordance, and
   1.2)Used optimal cut points criteria (identifying point where sensitivity and specificity is maximum) to extract the confusion matrix.
